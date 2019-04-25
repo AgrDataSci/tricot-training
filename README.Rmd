@@ -23,7 +23,7 @@ In the **tricot** approach, each participant receives a set of technologies (gen
 *Fig. 1: Example of a set of varieties randomly assigned to a farmer in a tricot project*
 
 
-Participants' independent observations are compiled and analysed centrally. A simple ranking-based feedback format allows even participants with low literacy skills to contribute their evaluation data through various channels, including mobile telephones.
+Participants' independent observations are compiled and analysed centrally with the PlackettLuce model[@Turner2018]. A simple ranking-based feedback format allows even participants with low literacy skills to contribute their evaluation data through various channels, including mobile telephones.
 
 ### Evidence on the tricot approach 
 
