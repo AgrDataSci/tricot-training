@@ -1,4 +1,5 @@
 # History files
+.DS_Store
 .Rhistory
 .Rapp.history
 
@@ -9,9 +10,6 @@
 .Rproj.user
 .Rproj.user/
 .Rproj
-
-# Powerpoint files
-*.ppt[x]
 
 
 # Temporary files created by R markdown

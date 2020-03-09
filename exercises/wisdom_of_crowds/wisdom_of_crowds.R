@@ -11,7 +11,7 @@ library("plotly")
 n <- 39
 
 # read the file with guesses
-data <- read_csv("wisdom_of_crowds.csv")
+data <- read_csv("exercises/wisdom_of_crowds/wisdom_of_crowds.csv")
 
 # remove NAs 
 data <- data[!is.na(data[["guess"]]),]
@@ -23,9 +23,9 @@ min_guess <- min(data[["guess"]])
 
 # make a plot to see how it differs from the real value
 ggplot(data, aes(x = guess)) +
-  stat_density(position="identity",geom="line") +
-  geom_vline(xintercept = n, colour = "red") +
-  geom_vline(xintercept = mean_guess, colour = "darkblue") +
+  stat_density(position = "identity", geom = "bar", col = "grey80") +
+  geom_vline(xintercept = n, colour = "red", size = 1) +
+  geom_vline(xintercept = mean_guess, colour = "darkblue", size = 1) +
   geom_text(aes(x = min_guess + 2, 
                 label= paste0("mean guess = ", as.integer(mean_guess)), y = 0.007),
            colour = "darkblue", vjust = 1.2) +
@@ -33,5 +33,6 @@ ggplot(data, aes(x = guess)) +
                 label= paste0("real value = ", n), y = 0.005),
            colour = "red", vjust = 1.2) +
   labs(x = "Guessed value",
-       y = "Density")
+       y = "Density") +
+  theme_bw()
 
